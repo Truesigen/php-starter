@@ -1,0 +1,60 @@
+[
+    {
+        "question":"Кто выиграл в ВОВ?",
+        "type":"radio",
+        "name":"question1",
+        "answers":[
+            {"text":"СССР","is_valid":true },
+            {"text":"США","is_valid":false},
+            {"text":"Массоны","is_valid":false}
+        ]
+    },
+    {
+        "question":"Учение свет, неученье ...?",
+        "type":"radio",
+        "name":"question2",
+        "answers":[
+            {"text":"Тьма","is_valid":true},
+            {"text":"Наслаждение","is_valid":false},
+            {"text":"Золото","is_valid":false}
+        ]
+    },
+    {
+        "question":"Любимая марка авто?",
+        "type":"checkbox",
+        "name":"question3",
+        "answers":[
+            {"text":"AUDI"},
+            {"text":"VW"},
+            {"text":"Mersedec"},
+            {"text":"BMW"},
+            {"text":"PEUGEOT"},
+            {"text":"DODGE"}
+        ]
+    },
+    {
+        "question":"Самая большая гора в мире?",
+        "type":"select",
+        "name":"question4",
+        "answers":[
+            {"option":[
+                "Эверест",
+                "Чогори",
+                "Канченджанга",
+                "Лхоцзе"
+            ]}
+          
+          
+        ]
+    },
+    {
+        "question":"Ваше имя",
+        "type":"text",
+        "name":"question5",
+        "answers":[{"text":""}]
+    }
+   
+   
+        
+    
+]
