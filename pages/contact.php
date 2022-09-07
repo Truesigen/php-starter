@@ -1,9 +1,9 @@
 <?php
-home();
+home()
 ?>
 <h1>Contacts</h1>
 
-<form method="POST" action="action">
+<form method="POST" action="">
     <p>Name</p>
     <input type="text" name="username"/>
     <p>Phone</p>

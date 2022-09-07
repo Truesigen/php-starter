@@ -4,12 +4,12 @@ home();
 ?>
 
 <?php
-$content = file_get_contents('lets.json');
-$content = json_decode($content);
+$data = 'forms/lets.json';
+$data = get_db($data);
 ?>
-<form method="POST" action="action">
+<form method="POST" action="services_form">
     <div style="border:1px solid red">
-    <?php foreach($content as $item): ?>
+    <?php foreach($data as $item): ?>
 
     <h2><?php echo $item->question; ?> </h2>
     <ul>

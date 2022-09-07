@@ -1,5 +1,8 @@
+
 <?php
 session_start();
+require_once('libs/app.php');
+
 $page;
 if($_SERVER[REQUEST_URI] == "/"){
     $page = "homepage";
@@ -9,18 +12,24 @@ if($_SERVER[REQUEST_URI] == "/"){
 
 
 
-if(file_exists("$page.php")){
-    include "$page.php";
+if(file_exists("pages/$page.php")){
+    include "pages/$page.php";
 } else {
-    include "homepage.php";
+    include ('pages\homepage.php');
 }
 
 function home(){
-    include "homepage.php";
+    include "pages\homepage.php";
 }
 
-?>
 
+
+    
+
+
+?>
+<h2><?php echo $_SESSION['msg']?></h2>
+<?php unset($_SESSION['msg'])?>
 
 
 

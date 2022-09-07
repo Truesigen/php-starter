@@ -1,0 +1,28 @@
+{
+    "name": "formName",
+    "title": "Registration form",
+    "description": "simple JFG example.",
+    "method": "post",
+    "action": "port_form",
+    "properties": {
+      "login": {
+        "type": "input",
+        "title": "Name",
+        "name":"firstName",
+        "placeholder":"my name",
+        "required": true,
+        "onChange":"console.log(this.value)"
+      },
+      "password": {
+        "type": "password",
+        "title": "Password",
+        "name":"password",
+        "min": 3
+      },
+      "submit": {
+        "type": "submit",
+        "title": "Sign Up",
+        "name":"submit"
+      }
+    }
+  }
